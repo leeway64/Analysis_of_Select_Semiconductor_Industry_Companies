@@ -7,12 +7,14 @@ library(dplyr)
 library(ggplot2)
 
 
+# Imports a data file from the "data" folder
 read_data <- function(data_file){
     data <- import_list(here("data", data_file))  # Import all sheets in an Excel spreadsheet
     return(data)
 }
 
 
+# Plots the closing stock price for each week for each company
 plot_stock_price <- function(){
     path <- "stock_price/"
     Intel <- read_data(paste(path, "INTC.xlsx", sep=""))$INTC
@@ -42,7 +44,7 @@ plot_stock_price <- function(){
 
 
 plot_revenue <- function(){
-    revenue_data = read_data("revenue/revenue.xlsx")
+    revenue_data <- read_data("revenue/revenue.xlsx")
     Intel <- revenue_data$Intel
     # Convert millions of USD to thousands of USD
     millions_to_thousands <- Intel$Revenue %>% (function (x) x * 1000)
@@ -50,8 +52,7 @@ plot_revenue <- function(){
     Intel$Revenue <- unlist(millions_to_thousands)
     
     TSMC <- revenue_data$TSMC
-    # Convert New Taiwan dollars to US dollars
-    # TSMC's revenue was originally in millions of NTD, need to convert that to thousands of USD
+    # Convert millions of New Taiwan dollars to thousands of US dollars
     NTD_to_USD <- Map({function (x) x*0.036*1000}, TSMC$Revenue)
     dim(NTD_to_USD) <- c(length(TSMC$Revenue), 1)
     NTD_to_USD <- unlist(NTD_to_USD)
@@ -70,5 +71,34 @@ plot_revenue <- function(){
 }
 
 
-plot_revenue()
-plot_stock_price()
+# Plots the gross profit of the companies
+plot_profit <- function(){
+    profit_data <- read_data("profit/profit.xlsx")
+    Intel <- profit_data$Intel
+    TSMC <- profit_data$TSMC
+    Samsung <- profit_data$Samsung
+    SMIC <- profit_data$SMIC
+}
+
+
+# Plots R & D spending of the 4 companies
+plot_RD_spending <- function(){
+    RD_spending_data <- read_data("RD")
+}
+
+
+plot_capital_expenditure <- function(){
+    
+}
+
+
+main <- function(){
+    plot_stock_price()
+    plot_revenue()
+    plot_profit()
+    plot_RD_spending()
+    plot_capital_expenditures()
+}
+
+
+main()
