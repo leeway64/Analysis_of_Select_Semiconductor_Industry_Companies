@@ -67,27 +67,47 @@ plot_revenue <- function(){
             geom_line(aes(x=TSMC$Year, y=TSMC$Revenue, color='TSMC'))+
             geom_line(aes(x=Samsung$Year, y=Samsung$Revenue, color='Samsung'))+
             geom_line(aes(x=SMIC$Year, y=SMIC$Revenue, color='SMIC'))+
-            labs(title='Revenue vs. date', x='Date', y='Revenue (USD)'))
+            labs(title='Revenue vs. date', x='Date', y='Revenue (USD, \'000)'))
 }
 
 
 # Plots the gross profit of the companies
 plot_profit <- function(){
     profit_data <- read_data("profit/profit.xlsx")
+    
     Intel <- profit_data$Intel
+    # Convert millions of USD to thousands of USD
+    millions_to_thousands <- Intel$Gross_profit %>% (function (x) x * 1000)
+    dim(millions_to_thousands) <- c(length(Intel$Gross_profit), 1)
+    Intel$Gross_profit <- unlist(millions_to_thousands)
+    
     TSMC <- profit_data$TSMC
+    # Convert millions of New Taiwan dollars to thousands of US dollars
+    NTD_to_USD <- Map({function (x) x*0.036*1000}, TSMC$Gross_profit)
+    dim(NTD_to_USD) <- c(length(TSMC$Gross_profit), 1)
+    NTD_to_USD <- unlist(NTD_to_USD)
+    TSMC$Gross_profit <- NTD_to_USD
+    
     Samsung <- profit_data$Samsung
     SMIC <- profit_data$SMIC
+    
+    dev.new()
+    print(ggplot()+
+              geom_line(aes(x=Intel$Year, y=Intel$Gross_profit, color='Intel'))+
+              geom_line(aes(x=TSMC$Year, y=TSMC$Gross_profit, color='TSMC'))+
+              geom_line(aes(x=Samsung$Year, y=Samsung$Gross_profit, color='Samsung'))+
+              geom_line(aes(x=SMIC$Year, y=SMIC$Gross_profit, color='SMIC'))+
+              labs(title='Gross profit vs. date', x='Date', y='Gross profit (USD, \'000)'))
 }
 
 
 # Plots R & D spending of the 4 companies
 plot_RD_spending <- function(){
-    RD_spending_data <- read_data("RD")
+    RD_spending_data <- read_data()
 }
 
 
-plot_capital_expenditure <- function(){
+plot_capital_expenditures <- function(){
     
 }
 

@@ -24,4 +24,20 @@ Running the scripts
 References
 -----------
 
+This section serves as an abridged list of the references used in this project. Refer to the
+`analysis <./analysis/Analysis.rst>`_ for a complete list of sources.
+
+Intel
+~~~~~~~~
+
+Revenue and profit:
+
+TSMC
+~~~~~~
+
+Samsung
+~~~~~~~~~
+
+SMIC
+~~~~~~
 
