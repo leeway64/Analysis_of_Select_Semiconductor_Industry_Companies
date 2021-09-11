@@ -23,7 +23,7 @@ plot_stock_price <- function(){
     Samsung <- read_data(paste(path, "005930.KS.xlsx", sep=""))$"005930.KS"
     # Convert Korean Republic won to US dollars
     KRW_to_USD <- Map({function (x) x*0.00086}, Samsung$Close)
-    dim(KRW_to_USD) <- c(length(Samsung$Close), 1)
+    dim(KRW_to_USD) <- c(length(Samsung$Close), 1)  # Change the dimensions of the list
     KRW_to_USD <- unlist(KRW_to_USD)
     Samsung$Close <- KRW_to_USD
     
@@ -67,7 +67,7 @@ plot_revenue <- function(){
             geom_line(aes(x=TSMC$Year, y=TSMC$Revenue, color='TSMC'))+
             geom_line(aes(x=Samsung$Year, y=Samsung$Revenue, color='Samsung'))+
             geom_line(aes(x=SMIC$Year, y=SMIC$Revenue, color='SMIC'))+
-            labs(title='Revenue vs. date', x='Date', y='Revenue (USD, \'000)'))
+            labs(title='Revenue vs. year', x='Year', y='Revenue (USD, \'000)'))
 }
 
 
@@ -97,18 +97,27 @@ plot_profit <- function(){
               geom_line(aes(x=TSMC$Year, y=TSMC$Gross_profit, color='TSMC'))+
               geom_line(aes(x=Samsung$Year, y=Samsung$Gross_profit, color='Samsung'))+
               geom_line(aes(x=SMIC$Year, y=SMIC$Gross_profit, color='SMIC'))+
-              labs(title='Gross profit vs. date', x='Date', y='Gross profit (USD, \'000)'))
+              labs(title='Gross profit vs. year', x='Year', y='Gross profit (USD, \'000)'))
 }
 
 
-# Plots R & D spending of the 4 companies
+# Plots R & D spending of the 4 companies as a percentage of revenue
 plot_RD_spending <- function(){
-    RD_spending_data <- read_data()
-}
-
-
-plot_capital_expenditures <- function(){
+    RD_spending_data <- read_data("RD_spending/RD_spending.xlsx")
     
+    Intel <- RD_spending_data$Intel
+    TSMC <- RD_spending_data$TSMC
+    Samsung <- RD_spending_data$Samsung
+    SMIC <- RD_spending_data$SMIC
+    
+    dev.new()
+    print(ggplot()+
+              geom_line(aes(x=Intel$Year, y=Intel$RD, color='Intel'))+
+              geom_line(aes(x=TSMC$Year, y=TSMC$RD, color='TSMC'))+
+              geom_line(aes(x=Samsung$Year, y=Samsung$RD, color='Samsung'))+
+              geom_line(aes(x=SMIC$Year, y=SMIC$RD, color='SMIC'))+
+              labs(title='R & D spending vs. year',
+                   x='Year', y='R & D spending (% of net revenue)'))
 }
 
 
@@ -117,7 +126,6 @@ main <- function(){
     plot_revenue()
     plot_profit()
     plot_RD_spending()
-    plot_capital_expenditures()
 }
 
 
