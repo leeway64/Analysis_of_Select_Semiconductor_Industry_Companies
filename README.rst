@@ -30,14 +30,21 @@ This section serves as an abridged list of the references used in this project. 
 Intel
 ~~~~~~~~
 
-Revenue and profit:
+Revenue, profit, R & D spending: `Financial Results <https://www.intc.com/financial-info/financial-results>`_
 
 TSMC
 ~~~~~~
 
+Revenue, profit, R & D spending: 
+
 Samsung
 ~~~~~~~~~
+
+Revenue and profit:
+
+R & D spending:
 
 SMIC
 ~~~~~~
 
+Revenue, profit, R & D spending:

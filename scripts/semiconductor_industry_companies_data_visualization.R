@@ -58,16 +58,13 @@ plot_revenue <- function(){
     NTD_to_USD <- unlist(NTD_to_USD)
     TSMC$Revenue <- NTD_to_USD
 
-    Samsung <- revenue_data$Samsung
-    SMIC <- revenue_data$SMIC
+    # From the sources provided, Samsung and SMIC don't provide net revenue data
     
     dev.new()
     print(ggplot()+
             geom_line(aes(x=Intel$Year, y=Intel$Revenue, color='Intel'))+
             geom_line(aes(x=TSMC$Year, y=TSMC$Revenue, color='TSMC'))+
-            geom_line(aes(x=Samsung$Year, y=Samsung$Revenue, color='Samsung'))+
-            geom_line(aes(x=SMIC$Year, y=SMIC$Revenue, color='SMIC'))+
-            labs(title='Revenue vs. year', x='Year', y='Revenue (USD, \'000)'))
+            labs(title='Net revenue vs. year', x='Year', y='Revenue (USD, \'000)'))
 }
 
 
@@ -75,11 +72,7 @@ plot_revenue <- function(){
 plot_profit <- function(){
     profit_data <- read_data("profit/profit.xlsx")
     
-    Intel <- profit_data$Intel
-    # Convert millions of USD to thousands of USD
-    millions_to_thousands <- Intel$Gross_profit %>% (function (x) x * 1000)
-    dim(millions_to_thousands) <- c(length(Intel$Gross_profit), 1)
-    Intel$Gross_profit <- unlist(millions_to_thousands)
+    # Intel doesn't provide gross profit, only gross margin, in the sources provided
     
     TSMC <- profit_data$TSMC
     # Convert millions of New Taiwan dollars to thousands of US dollars
@@ -93,7 +86,6 @@ plot_profit <- function(){
     
     dev.new()
     print(ggplot()+
-              geom_line(aes(x=Intel$Year, y=Intel$Gross_profit, color='Intel'))+
               geom_line(aes(x=TSMC$Year, y=TSMC$Gross_profit, color='TSMC'))+
               geom_line(aes(x=Samsung$Year, y=Samsung$Gross_profit, color='Samsung'))+
               geom_line(aes(x=SMIC$Year, y=SMIC$Gross_profit, color='SMIC'))+
@@ -101,21 +93,19 @@ plot_profit <- function(){
 }
 
 
-# Plots R & D spending of the 4 companies as a percentage of revenue
+# Plots R & D spending of the 4 companies as a percentage of net revenue
 plot_RD_spending <- function(){
     RD_spending_data <- read_data("RD_spending/RD_spending.xlsx")
     
     Intel <- RD_spending_data$Intel
     TSMC <- RD_spending_data$TSMC
-    Samsung <- RD_spending_data$Samsung
-    SMIC <- RD_spending_data$SMIC
+
+    # From the sources provided, Samsung and SMIC don't provide net revenue data
     
     dev.new()
     print(ggplot()+
               geom_line(aes(x=Intel$Year, y=Intel$RD, color='Intel'))+
               geom_line(aes(x=TSMC$Year, y=TSMC$RD, color='TSMC'))+
-              geom_line(aes(x=Samsung$Year, y=Samsung$RD, color='Samsung'))+
-              geom_line(aes(x=SMIC$Year, y=SMIC$RD, color='SMIC'))+
               labs(title='R & D spending vs. year',
                    x='Year', y='R & D spending (% of net revenue)'))
 }
