@@ -1,10 +1,11 @@
-# Visualizes several statistics of TSMC, Intel, Samsung Electronics, and SMIC.
+# Visualizes several statistics of Intel, TSMC, Samsung Electronics, and SMIC.
 
 library(here)
 library(rio)
-library(purrr)
 library(dplyr)
 library(ggplot2)
+library(grid)
+library(gridExtra)
 
 
 # Imports a data file from the "data" folder
@@ -23,14 +24,12 @@ plot_stock_price <- function(){
     Samsung <- read_data(paste(path, "005930.KS.xlsx", sep=""))$"005930.KS"
     # Convert Korean Republic won to US dollars
     KRW_to_USD <- Map({function (x) x*0.00086}, Samsung$Close)
-    dim(KRW_to_USD) <- c(length(Samsung$Close), 1)  # Change the dimensions of the list
     KRW_to_USD <- unlist(KRW_to_USD)
     Samsung$Close <- KRW_to_USD
     
     SMIC <- read_data(paste(path, "0981.HK.xlsx", sep=""))$"0981.HK"
     # Convert Hong Kong dollars to US dollars
     HKD_to_USD <- Map({function (x) x*0.13}, SMIC$Close)
-    dim(HKD_to_USD) <- c(length(SMIC$Close), 1)
     SMIC$Close <- unlist(HKD_to_USD)
 
     dev.new()
@@ -48,20 +47,17 @@ plot_revenue <- function(){
     Intel <- revenue_data$Intel
     # Convert millions of USD to thousands of USD
     millions_to_thousands <- Intel$Revenue %>% (function (x) x * 1000)
-    dim(millions_to_thousands) <- c(length(Intel$Revenue), 1)
     Intel$Revenue <- unlist(millions_to_thousands)
     
     TSMC <- revenue_data$TSMC
     # Convert millions of New Taiwan dollars to thousands of US dollars
     NTD_to_USD <- Map({function (x) x*0.036*1000}, TSMC$Revenue)
-    dim(NTD_to_USD) <- c(length(TSMC$Revenue), 1)
     NTD_to_USD <- unlist(NTD_to_USD)
     TSMC$Revenue <- NTD_to_USD
 
     # From the sources provided, Samsung and SMIC don't provide net revenue data
     
-    dev.new()
-    print(ggplot()+
+    return(ggplot()+
             geom_line(aes(x=Intel$Year, y=Intel$Revenue, color='Intel'))+
             geom_line(aes(x=TSMC$Year, y=TSMC$Revenue, color='TSMC'))+
             labs(title='Net revenue vs. year', x='Year', y='Revenue (USD, \'000)'))
@@ -77,15 +73,13 @@ plot_profit <- function(){
     TSMC <- profit_data$TSMC
     # Convert millions of New Taiwan dollars to thousands of US dollars
     NTD_to_USD <- Map({function (x) x*0.036*1000}, TSMC$Gross_profit)
-    dim(NTD_to_USD) <- c(length(TSMC$Gross_profit), 1)
     NTD_to_USD <- unlist(NTD_to_USD)
     TSMC$Gross_profit <- NTD_to_USD
     
     Samsung <- profit_data$Samsung
     SMIC <- profit_data$SMIC
     
-    dev.new()
-    print(ggplot()+
+    return(ggplot()+
               geom_line(aes(x=TSMC$Year, y=TSMC$Gross_profit, color='TSMC'))+
               geom_line(aes(x=Samsung$Year, y=Samsung$Gross_profit, color='Samsung'))+
               geom_line(aes(x=SMIC$Year, y=SMIC$Gross_profit, color='SMIC'))+
@@ -102,8 +96,7 @@ plot_RD_spending <- function(){
 
     # From the sources provided, Samsung and SMIC don't provide net revenue data
     
-    dev.new()
-    print(ggplot()+
+    return(ggplot()+
               geom_line(aes(x=Intel$Year, y=Intel$RD, color='Intel'))+
               geom_line(aes(x=TSMC$Year, y=TSMC$RD, color='TSMC'))+
               labs(title='R & D spending vs. year',
@@ -113,9 +106,9 @@ plot_RD_spending <- function(){
 
 main <- function(){
     plot_stock_price()
-    plot_revenue()
-    plot_profit()
-    plot_RD_spending()
+    dev.new()
+    grid.arrange(plot_revenue(), plot_profit(), plot_RD_spending(), nrow=3,
+                 top=textGrob("Plotted statistics of Intel, TSMC, Samsung Electronics, and SMIC"))
 }
 
 

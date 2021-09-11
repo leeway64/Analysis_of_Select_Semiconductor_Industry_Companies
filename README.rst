@@ -18,8 +18,22 @@ Corporation).
 Abstract
 ----------
 
-Running the scripts
+.. image:: images/Stock_prices.png
+
+.. image:: images/Plotted_statistics.png
+
+Read the full analysis `here <analysis/Analysis.rst>`_.
+
+
+
+Running the script
 -------------------
+
+Install the R packages listed in the `requirements file <scripts/requirements.rst>`_ before continuing.
+
+To plot the graphs on your own machine, run "semiconductor_industry_companies_data_visualization.R"
+in `scripts <scripts/>`_ from top to bottom.
+
 
 References
 -----------
