@@ -45,27 +45,27 @@ create the report.
 Intel
 ~~~~~~
 
-Revenue, R & D spending: `Financial Results<https://www.intc.com/financial-info/financial-results>`_
+Revenue, R & D spending: `Financial Results <https://www.intc.com/financial-info/financial-results>`_
 
-Stock price: `Yahoo Finance<https://finance.yahoo.com/quote/INTC/history?period1=322099200&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true>`_
+Stock price: `Yahoo Finance <https://finance.yahoo.com/quote/INTC/history?period1=322099200&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true>`_
 
 TSMC
 ~~~~~
 
-Revenue, profit, R & D spending: `Annual Reports<https://investor.tsmc.com/english/annual-reports>`_
+Revenue, profit, R & D spending: `Annual Reports <https://investor.tsmc.com/english/annual-reports>`_
 
-Stock price: `Yahoo Finance<https://finance.yahoo.com/quote/TSM/history?period1=876355200&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true`_
+Stock price: `Yahoo Finance <https://finance.yahoo.com/quote/TSM/history?period1=876355200&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true>`_
 
 Samsung
 ~~~~~~~~
 
-Profit: `Financial Statements<https://www.samsung.com/global/ir/financial-information/audited-financial-statements/>`_
+Profit: `Financial Statements <https://www.samsung.com/global/ir/financial-information/audited-financial-statements/>`_
 
-Stock price: `Yahoo Finance<https://finance.yahoo.com/quote/005930.KS/history?period1=946857600&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true>`_
+Stock price: `Yahoo Finance <https://finance.yahoo.com/quote/005930.KS/history?period1=946857600&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true>`_
 
 SMIC
 ~~~~~
 
-Profit: `Financials<https://www.smics.com/en/site/company_financialSummary>`_
+Profit: `Financials <https://www.smics.com/en/site/company_financialSummary>`_
 
-Stock price: `Yahoo Finance<https://finance.yahoo.com/quote/0981.HK/history?period1=1079481600&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true>`_
+Stock price: `Yahoo Finance <https://finance.yahoo.com/quote/0981.HK/history?period1=1079481600&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true>`_
