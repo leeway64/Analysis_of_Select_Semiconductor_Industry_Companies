@@ -15,7 +15,7 @@ read_data <- function(data_file){
 }
 
 
-# Plots the closing stock price for each week for each company
+# Plots the closing stock price of each week for each company
 plot_stock_price <- function(){
     path <- "stock_price/"
     Intel <- read_data(paste(path, "INTC.xlsx", sep=""))$INTC
