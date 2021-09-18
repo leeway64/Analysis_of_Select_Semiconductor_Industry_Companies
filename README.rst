@@ -22,7 +22,7 @@ Abstract
 
 .. image:: images/Plotted_statistics.png
 
-Read the full report/analysis `here <analysis/Analysis.rst>`_.
+Read the full report/analysis `here <analysis/README.rst>`_.
 
 
 
@@ -39,7 +39,7 @@ References
 -----------
 
 This section serves as a list of the references used to create the plots. Refer to the
-`report <./analysis/Analysis.rst>`_ for a complete list of sources, including sources used to
+`report <./analysis/README.rst>`_ for a complete list of sources, including sources used to
 create the report.
 
 Intel
