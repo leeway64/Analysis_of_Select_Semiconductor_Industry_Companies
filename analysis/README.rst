@@ -30,7 +30,6 @@ manufacturing company;
 References
 -----------
 
-::
-	"The Pivot." *The Economist*, 21 December 2019 - 3 January 2020, 29-30.
+"The pivot." *The Economist*, 21 December 2019 - 3 January 2020, 29-30.
 	
 	
