@@ -6,7 +6,7 @@ Motivation
 
 The semiconductor industry is perhaps the most important industry of the 21st century. It provides
 the backbone to most of the advanced technology we almost always take for granted. Without
-semiconductors, mobile phones, computers, and the internet would not be possible.
+semiconductors, technology such as mobile phones, computers, and the internet would not be possible.
 
 This project analyzes the relative strengths of some of the most important manufacturers in the 
 semiconductor industry; the companies included in this study are Intel, TSMC (Taiwan Semiconductor
@@ -31,11 +31,11 @@ Running the script
 
 Install the R packages listed in the `requirements file <scripts/requirements.rst>`_ before continuing.
 
-To plot the graphs on your own machine, run "semiconductor_industry_companies_data_visualization.R"
-in `scripts <scripts/>`_ from top to bottom.
+To plot the graphs on your own machine, run
+`semiconductor_industry_companies_data_visualization.R <scripts/semiconductor_industry_companies_data_visualization.R>`_.
 
 
-References
+References for Plots
 -----------
 
 This section serves as a list of the references used to create the plots. Refer to the
