@@ -67,9 +67,37 @@ gross profit.
 References
 -----------
 
+For Analysis
+~~~~~~~~~~~~~
+
 "The pivot." *The Economist*, 21 Dec. 2019 - 3 Jan. 2020, 29-30.
 
 "Chip wars: Immaculate misconceptions." *The Economist*, 23-29 May 2020, 51-52.
 
 "Taiwan Semiconductor Manufacturing Company: Living on the edge." *The Economist*, 1-7 May 2021, 52-53.
 
+For Plots
+~~~~~~~~~~
+
+"Financial Results."  *Intel*, https://www.intc.com/financial-info/financial-results.
+
+"Intel Corporation (INTC)." *Yahoo! Finance*, https://finance.yahoo.com/quote/INTC/history?period1=322099200&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true.
+
+"Annual Reports." *Taiwan Semiconductor Manufacturing Company*, https://investor.tsmc.com/english/annual-reports.
+
+"Taiwan Semiconductor Manufacturing Company Limited (TSM)." *Yahoo! Finance*, https://finance.yahoo.com/quote/TSM/history?period1=876355200&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true.
+
+"Financial Statements." *Samsung Electronics*, https://www.samsung.com/global/ir/financial-information/audited-financial-statements/.
+
+"Samsung Electronics Co., Ltd. (005930.KS)." *Yahoo! Finance*, https://finance.yahoo.com/quote/005930.KS/history?period1=946857600&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true.
+
+"Financials." *Semiconductor Manufacturing International Corporation*, https://www.smics.com/en/site/company_financialSummary.
+
+"Semiconductor Manufacturing International Corporation (0981.HK)." *Yahoo! Finance*, https://finance.yahoo.com/quote/0981.HK/history?period1=1079481600&period2=1630713600&interval=1wk&filter=history&frequency=1wk&includeAdjustedClose=true.
+
+TODO
+Show how intel used to be really strong, but now isn't
+
+check all sources with a fine tooth comb
+
+upload xlsx for plots
