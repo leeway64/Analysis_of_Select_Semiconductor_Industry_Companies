@@ -87,10 +87,12 @@ Third Party Software
 
 The ``grid`` library comes included with R.
 
+
+
 License
 ----------
 
-My `analysis <analysis/README.md>`_ is licensed under the `Creative Commons Attribution 4.0 
+My `analysis <analysis/README.rst>`_ is licensed under the `Creative Commons Attribution 4.0 
 International license <https://creativecommons.org/licenses/by/4.0/>`_.
 
 The source code used to create the plots is licensed under the `MIT License <LICENSE.txt>`_.
