@@ -40,17 +40,18 @@ R & D (research and development) than Intel, is most definitely the leader of th
 84% of the market for the most advanced chips ("Taiwan Semiconductor").
 
 Intel's star, as of now, is not rising. Although its current financial prospects look well, its
-market share for the most advanced chips (the chips with smaller transistors) places it far behind TSMC
-or even Samsung ("Taiwan Semiconductor"). Where once it dominated the industry, it now lags behind.
+market share for the most advanced chips (the chips with the smallest transistors) places it far
+behind TSMC or even Samsung ("Taiwan Semiconductor"). Where once it dominated the industry, it now
+lags behind.
 
 Samsung Electronics' astronomical profit can be attributed to how it is not purely a semiconductor
-manufacturing company; it manufactures everything from smartphones to washing machines. However, even with $115bn set aside 
-to be invested in its chipmaking business over the next decade ("Chip wars"), it is still barely able to keep up
-with TSMC, of which Samsung Electronics is its remaining competitor in the realm of the
-highest-tech chips ("Taiwan Semiconductor").
+manufacturing company; it manufactures everything from smartphones to washing machines. However,
+even with $115bn set aside to be invested in its chipmaking business over the next decade
+("Chip wars"), it is still barely able to keep up with TSMC, of which Samsung Electronics is its
+remaining competitor in the realm of the highest-tech chips ("Taiwan Semiconductor").
 
-SMIC, as can be seen from its stock price and gross profit, is dwarfed by its superiors. For instance, where Intel has
-$55.4bn in assets, SMIC only has $7.8bn ("Chip wars").
+SMIC, as can be seen from its stock price and gross profit, is dwarfed by its superiors. For
+instance, where Intel has $55.4bn in assets, SMIC only has $7.8bn ("Chip wars").
 
 
 Conclusion
