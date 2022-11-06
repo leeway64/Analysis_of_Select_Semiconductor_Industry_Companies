@@ -112,4 +112,8 @@ main <- function(){
 }
 
 
-main()
+# Similar to __name__ == "__main__" in Python
+if (is.null(box::name()))
+{
+    main()
+}

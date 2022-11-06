@@ -2,6 +2,12 @@ Analysis of Select Semiconductor Industry Companies
 ====================================================
 
 
+.. image:: https://img.shields.io/badge/license-MIT-red.svg
+    :target: LICENSE.txt
+.. image:: https://img.shields.io/github/v/release/leeway64/Analysis_of_Select_Semiconductor_Industry_Companies
+    :alt: GitHub release (latest by date)
+
+
 Motivation
 -----------
 
@@ -39,13 +45,14 @@ First, install this project onto your local machine and enter the R Console:
 	git clone https://github.com/leeway64/Analysis_of_Select_Semiconductor_Industry_Companies.git
 	R
 
-Upon entering the R Console, you should see something to the effect of ``renv``
+Upon entering the R Console, you should see something to the effect of
+``Project 'path/to/Analysis_of_Select_Semiconductor_Industry_Companies' loaded. [renv 0.16.0]``
 
 Then, in the R Console, run the following commands:
 
 .. code-block::
 
-	source(here("scripts", "semiconductor_industry_companies_data_visualization.R"))
+	source(here::here("scripts", "semiconductor_industry_companies_data_visualization.R"))
 	
 
 Alternatively, you can also run `semiconductor_industry_companies_data_visualization.R <scripts/semiconductor_industry_companies_data_visualization.R>`_ in RStudio.
