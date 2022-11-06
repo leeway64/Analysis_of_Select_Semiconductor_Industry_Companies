@@ -8,31 +8,42 @@ The semiconductor industry is perhaps the most important industry of the 21st ce
 the backbone to most of the advanced technology we almost always take for granted. Without
 semiconductors, technology such as mobile phones, computers, and the internet would not be possible.
 
+
+Abstract
+----------
+
 This project analyzes the relative strengths of some of the most important manufacturers in the 
 semiconductor industry; the companies included in this study are Intel, TSMC (Taiwan Semiconductor
 Manufacturing Company), Samsung Electronics, and SMIC (Semiconductor Manufacturing International
 Corporation).
 
-
-
-Abstract
-----------
+Read the full report/analysis `here <analysis/README.rst>`_.
 
 .. image:: images/Stock_prices.png
 
 .. image:: images/Plotted_statistics.png
 
-Read the full report/analysis `here <analysis/README.rst>`_.
 
-
-
-Running the script
+Drawing the plots
 -------------------
 
-Install the R packages listed in the `requirements file <scripts/requirements.rst>`_ before continuing.
+First, install this project onto your local machine and enter the R Console:
 
-To plot the graphs on your own machine, run
-`semiconductor_industry_companies_data_visualization.R <scripts/semiconductor_industry_companies_data_visualization.R>`_.
+.. code-block:: bash
+
+	git clone https://github.com/leeway64/Analysis_of_Select_Semiconductor_Industry_Companies.git
+	R
+
+Upon entering the R Console, you should see something to the effect of ``renv``
+
+Then, in the R Console, run the following commands:
+
+.. code-block::
+
+	source(here("scripts", "semiconductor_industry_companies_data_visualization.R"))
+	
+
+Alternatively, you can also run `semiconductor_industry_companies_data_visualization.R <scripts/semiconductor_industry_companies_data_visualization.R>`_ in RStudio.
 
 
 References for Plots
@@ -86,7 +97,6 @@ Third Party Software
 - `gridExtra <https://cran.r-project.org/web/packages/gridExtra/index.html>`_ (GPL-2 | GPL-3): Grid graphics manipulation.
 
 The ``grid`` library comes included with R.
-
 
 
 License
