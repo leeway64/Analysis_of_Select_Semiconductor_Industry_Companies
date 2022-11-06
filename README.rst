@@ -97,6 +97,7 @@ SMIC
 
 Third Party Software
 ----------------------
+- `renv <https://rstudio.github.io/renv/>`_ (MIT License): Reproducible environment creation library;
 
 - `here <https://here.r-lib.org/>`_ (MIT License): Library for making file referencing easier.
 
@@ -107,6 +108,8 @@ Third Party Software
 - `ggplot2 <https://ggplot2.tidyverse.org/>`_ (MIT License): Plotting library.
 
 - `gridExtra <https://cran.r-project.org/web/packages/gridExtra/index.html>`_ (GPL-2 | GPL-3): Grid graphics manipulation.
+
+- `box <https://klmr.me/box/>`_ (MIT License): Package to increase modularity of R code.
 
 The ``grid`` library comes included with R.
 
