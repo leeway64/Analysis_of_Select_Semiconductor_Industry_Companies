@@ -1,6 +1,7 @@
 Analysis of Select Semiconductor Industry Companies
 =====================================================
 
+
 Introduction
 -------------
 
@@ -9,6 +10,7 @@ the backbone to most of the advanced technology we almost always take for grante
 semiconductors, technology such as mobile phones, computers, and the internet would not be possible.
 
 So, I wanted to try to explain the statistics of some of the most advanced companies in the world.
+
 
 Analysis
 ----------
@@ -21,8 +23,8 @@ companies such as Apple, Disney, or Alibaba would be nowhere without TSMC ("The 
 
 It should be noted that SMIC (Semiconductor Manufacturer International Corporation), the largest
 Chinese semiconductor manufacturing company (Beddor), has the lowest stock price of the four. If that is
-any indication of the state of China's nascent semiconductor industry, then it is still leagues
-behind its North American and Asian counterparts.
+any indication of the state of The People's Republic of China's nascent semiconductor industry,
+then it is still leagues behind its North American and East Asian counterparts.
 
 "Without prior expertise you are lost", says The Economist ("The pivot"). China would do well to remember that. Even if
 another company could match TSMC's capabilities, TSMC would already be working on the next generation
@@ -33,7 +35,7 @@ continues ("Taiwan Semiconductor").
 
 .. image:: ../images/Plotted_statistics.png
 
-Do not be tricked by absolute numbers. TSMC, although it has lower net revenue and spends less on
+Do not be fooled by absolute numbers. TSMC, although it has lower net revenue and spends less on
 R & D (research and development) than Intel, is most definitely the leader of this pack, controlling
 84% of the market for the most advanced chips ("Taiwan Semiconductor").
 
@@ -50,6 +52,7 @@ highest-tech chips ("Taiwan Semiconductor").
 SMIC, as can be seen from its stock price and gross profit, is dwarfed by its superiors. For instance, where Intel has
 $55.4bn in assets, SMIC only has $7.8bn ("Chip wars").
 
+
 Conclusion
 ------------
 
@@ -65,9 +68,9 @@ the manufacturing crown, ("Taiwan Semiconductor"), it will still help Intel's pr
 Samsung Electronics will remain a viable force in the future; the lumbering South Korean behemoth will continue
 to stumble on, if by nothing else but sheer inertia.
 
-SMIC, on the other hand, is a minnow in a sea full of ruthless leviathans who have cut their teeth
-on hardship itself. It clearly has its work cut out for it, both in terms of improving its share price and
-gross profit.
+SMIC, on the other hand, is a minnow in a sea full of leviathans. It clearly has its work cut out
+for it, both in terms of improving its share price and gross profit.
+
 
 References
 -----------

@@ -1,12 +1,17 @@
 Analysis of Select Semiconductor Industry Companies
 ====================================================
 
+
 Motivation
 -----------
 
 The semiconductor industry is perhaps the most important industry of the 21st century. It provides
 the backbone to most of the advanced technology we almost always take for granted. Without
 semiconductors, technology such as mobile phones, computers, and the internet would not be possible.
+
+Big shout out to `The Economist <https://github.com/TheEconomist>`_. They always produce excellent
+reporting and graphs/plots. For a particularly well-done project that they undertook, refer to their
+`COVID-19 excess deaths model <https://github.com/TheEconomist/covid-19-the-economist-global-excess-deaths-model>`_
 
 
 Abstract
