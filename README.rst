@@ -121,4 +121,4 @@ License
 My `analysis <analysis/README.rst>`_ is licensed under the `Creative Commons Attribution 4.0 
 International license <https://creativecommons.org/licenses/by/4.0/>`_.
 
-The source code used to create the plots is licensed under the `MIT License <LICENSE.txt>`_.
+The source code used to create the plots is licensed under the `MIT License <LICENSE-CODE.txt>`_.

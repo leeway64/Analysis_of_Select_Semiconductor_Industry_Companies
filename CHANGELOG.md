@@ -6,12 +6,14 @@ this project follows [semantic versioning](https://semver.org/).
 
 
 ## Unreleased
-- Updated README and analysis
+- None
 
+## [1.1.0] - 2022-11-6
 
-## [1.1.0] - 2022--
 ### Added
-- 
+- Updated README and analysis
+- Integrated box and renv with project
+- Added CC-BY-4.0 License text
 
 
 ## [1.0.0] - 2022-4-18
