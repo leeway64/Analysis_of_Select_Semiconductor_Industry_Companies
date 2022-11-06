@@ -38,12 +38,13 @@ Read the full report/analysis `here <analysis/README.rst>`_.
 Drawing the plots
 -------------------
 
-First, install this project onto your local machine and enter the R Console:
+First, install this project onto your local machine and install the required packages in the R Console:
 
 .. code-block:: bash
 
 	git clone https://github.com/leeway64/Analysis_of_Select_Semiconductor_Industry_Companies.git
 	R
+    renv::restore()
 
 Upon entering the R Console, you should see something to the effect of
 ``Project 'path/to/Analysis_of_Select_Semiconductor_Industry_Companies' loaded. [renv 0.16.0]``
