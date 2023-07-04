@@ -44,12 +44,12 @@ First, install this project onto your local machine and install the required pac
 
 	git clone https://github.com/leeway64/Analysis_of_Select_Semiconductor_Industry_Companies.git
 	R
-    renv::restore()
+	renv::restore()
 
 Upon entering the R Console, you should see something to the effect of
 ``Project 'path/to/Analysis_of_Select_Semiconductor_Industry_Companies' loaded. [renv 0.16.0]``
 
-Then, in the R Console, run the following commands:
+Then, in the R Console, run the following:
 
 .. code-block::
 

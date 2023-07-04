@@ -8,6 +8,16 @@ this project follows [semantic versioning](https://semver.org/).
 ## Unreleased
 - None
 
+
+## [1.1.1] - 2023-7-3
+
+### Changed
+- Made small formatting edits to README
+
+### Removed
+- Deleted scripts/requirements.rst
+
+
 ## [1.1.0] - 2022-11-6
 
 ### Added
